@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- SEO Meta Tags -->
+  <title>Ayush Sharma | Portfolio</title>
+  <meta name="description" content="Ayush Sharma – BCA student, Web Developer, AI Coder, and Accountant. Explore my portfolio, skills, projects and services." />
+  <meta name="keywords" content="Ayush Sharma, Web Developer, BCA, AI Coder, Tally ERP, Portfolio, CRSU" />
+  <meta name="author" content="Ayush Sharma" />
+  <meta property="og:title" content="Ayush Sharma | Portfolio" />
+  <meta property="og:description" content="Premium portfolio of Ayush Sharma – Developer, Accountant & Creative Problem Solver." />
+  <meta property="og:type" content="website" />
+
+  <!-- Favicon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌿</text></svg>" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;900&family=DM+Sans:wght@300;400;500;600&family=Caveat:wght@500;700&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ═══════════════ NAVBAR ═══════════════ -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a class="nav-logo" href="#hero">
+        <span class="logo-leaf">🌿</span>
+        <span class="logo-text">Ayush<span>.</span></span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#hero"     class="nav-link">Home</a></li>
+        <li><a href="#about"    class="nav-link">About</a></li>
+        <li><a href="#skills"   class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#education"class="nav-link">Education</a></li>
+        <li><a href="#services" class="nav-link">Services</a></li>
+        <li><a href="#contact"  class="nav-link">Contact</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ═══════════════ HERO ═══════════════ -->
+  <section class="hero" id="hero">
+    <!-- Floating ambient shapes -->
+    <div class="hero-bg">
+      <div class="blob blob-1"></div>
+      <div class="blob blob-2"></div>
+      <div class="blob blob-3"></div>
+    </div>
+
+    <div class="hero-content">
+      <div class="hero-image-wrap fade-up">
+        <div class="hero-img-ring">
+          <img src="images/profile.jpeg" alt="Ayush Sharma – Ghibli Style Portrait" class="hero-img" />
+        </div>
+        <div class="hero-badge">
+          <i class="fa-solid fa-code"></i>
+          <span>Available for work</span>
+        </div>
+      </div>
+
+      <div class="hero-text fade-up delay-1">
+        <p class="hero-greeting">Hello, I'm</p>
+        <h1 class="hero-name">Ayush Sharma</h1>
+        <div class="hero-typing-wrap">
+          <span class="typing-prefix">I'm a </span>
+          <span class="typing-text" id="typingText"></span>
+          <span class="cursor">|</span>
+        </div>
+        <p class="hero-bio">
+          BCA student at CRSU Jind, passionate about coding, web development,
+          and computerized accounting. I build clean, functional experiences.
+        </p>
+        <div class="hero-cta">
+          <a href="#contact" class="btn btn-primary">
+            <i class="fa-solid fa-paper-plane"></i> Hire Me
+          </a>
+          <a href="#about" class="btn btn-outline">
+            <i class="fa-solid fa-user"></i> About Me
+          </a>
+          <a href="assets/Ayush_Sharma_Resume.pdf" download class="btn btn-ghost">
+            <i class="fa-solid fa-download"></i> Resume
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scroll hint -->
+    <div class="scroll-hint">
+      <div class="scroll-dot"></div>
+      <span>Scroll down</span>
+    </div>
+  </section>
+
+  <!-- ═══════════════ ABOUT ═══════════════ -->
+  <section class="section about-section" id="about">
+    <div class="container">
+      <div class="section-header fade-up">
+        <span class="section-tag">Who I Am</span>
+        <h2 class="section-title">About <span class="highlight">Me</span></h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-card glass fade-up">
+          <div class="about-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+          <h3>BCA Student</h3>
+          <p>2nd-year Bachelor of Computer Applications student at Chaudhary Ranbir Singh University, Jind, Haryana (2024–2027).</p>
+        </div>
+        <div class="about-card glass fade-up delay-1">
+          <div class="about-icon"><i class="fa-solid fa-laptop-code"></i></div>
+          <h3>Developer & Coder</h3>
+          <p>Passionate about web development and AI-assisted coding. I love solving real-world problems with logical thinking and clean code.</p>
+        </div>
+        <div class="about-card glass fade-up delay-2">
+          <div class="about-icon"><i class="fa-solid fa-calculator"></i></div>
+          <h3>Accountant</h3>
+          <p>Certified Diploma in Computer Aided Accountancy (DCAA) with hands-on expertise in Tally ERP, GST, bookkeeping, and financial reporting.</p>
+        </div>
+        <div class="about-card glass fade-up delay-3">
+          <div class="about-icon"><i class="fa-solid fa-comments"></i></div>
+          <h3>Communicator</h3>
+          <p>Strong English communication skills with a collaborative mindset. I connect ideas across technical and non-technical teams effortlessly.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════ SKILLS ═══════════════ -->
+  <section class="section skills-section" id="skills">
+    <div class="container">
+      <div class="section-header fade-up">
+        <span class="section-tag">What I Know</span>
+        <h2 class="section-title">My <span class="highlight">Skills</span></h2>
+      </div>
+
+      <div class="skills-grid">
+        <!-- Tech Skills -->
+        <div class="skills-col fade-up">
+          <h3 class="skills-col-title"><i class="fa-solid fa-code"></i> Technical</h3>
+          <div class="skill-bar-list">
+            <div class="skill-item">
+              <div class="skill-info">
+                <span><i class="fa-solid fa-robot"></i> AI Coding</span>
+                <span class="skill-pct">85%</span>
+              </div>
+              <div class="skill-track"><div class="skill-fill" data-width="85"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span><i class="fa-brands fa-html5"></i> Web Development</span>
+                <span class="skill-pct">80%</span>
+              </div>
+              <div class="skill-track"><div class="skill-fill" data-width="80"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span><i class="fa-solid fa-database"></i> Data Entry</span>
+                <span class="skill-pct">90%</span>
+              </div>
+              <div class="skill-track"><div class="skill-fill" data-width="90"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span><i class="fa-solid fa-file-excel"></i> Microsoft Excel</span>
+                <span class="skill-pct">85%</span>
+              </div>
+              <div class="skill-track"><div class="skill-fill" data-width="85"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Finance Skills -->
+        <div class="skills-col fade-up delay-1">
+          <h3 class="skills-col-title"><i class="fa-solid fa-chart-line"></i> Accounting & Finance</h3>
+          <div class="skill-bar-list">
+            <div class="skill-item">
+              <div class="skill-info">
+                <span><i class="fa-solid fa-receipt"></i> Tally ERP</span>
+                <span class="skill-pct">90%</span>
+              </div>
+              <div class="skill-track"><div class="skill-fill" data-width="90"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span><i class="fa-solid fa-book-open"></i> Bookkeeping</span>
+                <span class="skill-pct">88%</span>
+              </div>
+              <div class="skill-track"><div class="skill-fill" data-width="88"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span><i class="fa-solid fa-file-invoice-dollar"></i> Financial Reporting</span>
+                <span class="skill-pct">82%</span>
+              </div>
+              <div class="skill-track"><div class="skill-fill" data-width="82"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span><i class="fa-solid fa-percent"></i> GST</span>
+                <span class="skill-pct">80%</span>
+              </div>
+              <div class="skill-track"><div class="skill-fill" data-width="80"></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Skill Badges -->
+      <div class="skill-badges fade-up delay-2">
+        <span class="badge"><i class="fa-solid fa-robot"></i> AI Coder</span>
+        <span class="badge"><i class="fa-solid fa-globe"></i> Web Developer</span>
+        <span class="badge"><i class="fa-solid fa-comments"></i> Communication</span>
+        <span class="badge"><i class="fa-solid fa-receipt"></i> Tally ERP</span>
+        <span class="badge"><i class="fa-solid fa-file-excel"></i> MS Excel</span>
+        <span class="badge"><i class="fa-solid fa-book"></i> Bookkeeping</span>
+        <span class="badge"><i class="fa-solid fa-percent"></i> GST</span>
+        <span class="badge"><i class="fa-solid fa-language"></i> English</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════ PROJECTS ═══════════════ -->
+  <section class="section projects-section" id="projects">
+    <div class="container">
+      <div class="section-header fade-up">
+        <span class="section-tag">What I've Built</span>
+        <h2 class="section-title">My <span class="highlight">Projects</span></h2>
+      </div>
+      <div class="projects-grid">
+
+        <div class="project-card glass fade-up">
+          <div class="project-img-wrap">
+            <img src="https://placehold.co/600x340/2D6A4F/FFF8E7?text=Portfolio+Website&font=playfair-display" alt="Portfolio Website" />
+            <div class="project-overlay">
+              <a href="#" class="btn-sm"><i class="fa-solid fa-eye"></i> View</a>
+              <a href="#" class="btn-sm"><i class="fa-brands fa-github"></i> Code</a>
+            </div>
+          </div>
+          <div class="project-info">
+            <span class="project-tag">HTML / CSS / JS</span>
+            <h3>Personal Portfolio</h3>
+            <p>A premium, Ghibli-inspired responsive portfolio website showcasing skills, projects, and experience with rich animations.</p>
+          </div>
+        </div>
+
+        <div class="project-card glass fade-up delay-1">
+          <div class="project-img-wrap">
+            <img src="https://placehold.co/600x340/1B4332/FFF8E7?text=Accounts+Dashboard&font=playfair-display" alt="Accounting Dashboard" />
+            <div class="project-overlay">
+              <a href="#" class="btn-sm"><i class="fa-solid fa-eye"></i> View</a>
+              <a href="#" class="btn-sm"><i class="fa-brands fa-github"></i> Code</a>
+            </div>
+          </div>
+          <div class="project-info">
+            <span class="project-tag">Tally ERP / Excel</span>
+            <h3>Accounting Dashboard</h3>
+            <p>A structured accounting workflow using Tally ERP and Excel for bookkeeping, GST filing, and financial report generation.</p>
+          </div>
+        </div>
+
+        <div class="project-card glass fade-up delay-2">
+          <div class="project-img-wrap">
+            <img src="https://placehold.co/600x340/1D3557/FFF8E7?text=AI+Chat+Tool&font=playfair-display" alt="AI Chat Tool" />
+            <div class="project-overlay">
+              <a href="#" class="btn-sm"><i class="fa-solid fa-eye"></i> View</a>
+              <a href="#" class="btn-sm"><i class="fa-brands fa-github"></i> Code</a>
+            </div>
+          </div>
+          <div class="project-info">
+            <span class="project-tag">AI / Web Dev</span>
+            <h3>AI-Assisted Web Tool</h3>
+            <p>Leveraging AI-coding tools to build smart, interactive web utilities that automate repetitive tasks and enhance productivity.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════ EDUCATION ═══════════════ -->
+  <section class="section education-section" id="education">
+    <div class="container">
+      <div class="section-header fade-up">
+        <span class="section-tag">My Journey</span>
+        <h2 class="section-title">Education & <span class="highlight">Experience</span></h2>
+      </div>
+      <div class="timeline">
+
+        <div class="timeline-item fade-up">
+          <div class="timeline-dot"><i class="fa-solid fa-graduation-cap"></i></div>
+          <div class="timeline-card glass">
+            <span class="timeline-date">July 2024 – July 2027</span>
+            <h3>Bachelor of Computer Applications (BCA)</h3>
+            <h4><i class="fa-solid fa-university"></i> Chaudhary Ranbir Singh University (CRSU), Jind</h4>
+            <p>Specialization in Computer Science. Gaining expertise in programming, web technologies, databases, and software engineering fundamentals.</p>
+            <div class="timeline-tags">
+              <span>Computer Science</span><span>Programming</span><span>Web Dev</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item fade-up delay-1">
+          <div class="timeline-dot"><i class="fa-solid fa-certificate"></i></div>
+          <div class="timeline-card glass">
+            <span class="timeline-date">2024</span>
+            <h3>Diploma in Computer Aided Accountancy (DCAA)</h3>
+            <h4><i class="fa-solid fa-university"></i> Chaudhary Ranbir Singh University (CRSU), Jind</h4>
+            <p>Completed a professional diploma covering computerized accounting, Tally ERP, GST filing, financial reporting, and bookkeeping practices.</p>
+            <div class="timeline-tags">
+              <span>Tally ERP</span><span>GST</span><span>Bookkeeping</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item fade-up delay-2">
+          <div class="timeline-dot"><i class="fa-solid fa-briefcase"></i></div>
+          <div class="timeline-card glass">
+            <span class="timeline-date">Ongoing</span>
+            <h3>Freelance Web Developer & AI Coder</h3>
+            <h4><i class="fa-solid fa-laptop"></i> Self-Employed</h4>
+            <p>Building websites, automation tools, and providing accounting support to small businesses. Working with modern AI-coding tools to deliver faster, smarter solutions.</p>
+            <div class="timeline-tags">
+              <span>Freelance</span><span>AI Tools</span><span>Web Dev</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════ SERVICES ═══════════════ -->
+  <section class="section services-section" id="services">
+    <div class="container">
+      <div class="section-header fade-up">
+        <span class="section-tag">What I Offer</span>
+        <h2 class="section-title">My <span class="highlight">Services</span></h2>
+      </div>
+      <div class="services-grid">
+
+        <div class="service-card glass fade-up">
+          <div class="service-icon"><i class="fa-solid fa-code"></i></div>
+          <h3>Web Development</h3>
+          <p>Clean, responsive, modern websites built with HTML, CSS, and JavaScript. Optimized for performance, accessibility, and mobile devices.</p>
+          <ul class="service-list">
+            <li><i class="fa-solid fa-check"></i> Responsive Design</li>
+            <li><i class="fa-solid fa-check"></i> Landing Pages</li>
+            <li><i class="fa-solid fa-check"></i> Portfolio Sites</li>
+          </ul>
+        </div>
+
+        <div class="service-card glass fade-up delay-1">
+          <div class="service-icon"><i class="fa-solid fa-robot"></i></div>
+          <h3>AI-Assisted Coding</h3>
+          <p>Leveraging cutting-edge AI tools to develop, debug, and optimize code faster while maintaining quality and clean structure.</p>
+          <ul class="service-list">
+            <li><i class="fa-solid fa-check"></i> Automation Scripts</li>
+            <li><i class="fa-solid fa-check"></i> AI Tool Integration</li>
+            <li><i class="fa-solid fa-check"></i> Rapid Prototyping</li>
+          </ul>
+        </div>
+
+        <div class="service-card glass fade-up delay-2">
+          <div class="service-icon"><i class="fa-solid fa-receipt"></i></div>
+          <h3>Accounting & Tally</h3>
+          <p>Professional bookkeeping, GST filing, financial reports, and Tally ERP data management for small businesses and startups.</p>
+          <ul class="service-list">
+            <li><i class="fa-solid fa-check"></i> Tally ERP Setup</li>
+            <li><i class="fa-solid fa-check"></i> GST Filing</li>
+            <li><i class="fa-solid fa-check"></i> Financial Reports</li>
+          </ul>
+        </div>
+
+        <div class="service-card glass fade-up delay-3">
+          <div class="service-icon"><i class="fa-solid fa-table-columns"></i></div>
+          <h3>Data & Excel</h3>
+          <p>Organize, analyze, and visualize your business data with advanced Excel dashboards, formulas, and data-entry systems.</p>
+          <ul class="service-list">
+            <li><i class="fa-solid fa-check"></i> Excel Dashboards</li>
+            <li><i class="fa-solid fa-check"></i> Data Cleaning</li>
+            <li><i class="fa-solid fa-check"></i> Report Generation</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════ CONTACT ═══════════════ -->
+  <section class="section contact-section" id="contact">
+    <div class="container">
+      <div class="section-header fade-up">
+        <span class="section-tag">Let's Talk</span>
+        <h2 class="section-title">Get In <span class="highlight">Touch</span></h2>
+      </div>
+
+      <div class="contact-grid">
+        <!-- Info Panel -->
+        <div class="contact-info fade-up">
+          <p class="contact-intro">
+            I'm open to freelance projects, collaboration, and full-time opportunities.
+            Drop me a message and I'll get back to you soon!
+          </p>
+          <div class="contact-details">
+            <a href="mailto:ashubrahman26@gmail.com" class="contact-item">
+              <div class="c-icon"><i class="fa-solid fa-envelope"></i></div>
+              <div>
+                <span class="c-label">Email</span>
+                <span class="c-value">ashubrahman26@gmail.com</span>
+              </div>
+            </a>
+            <a href="https://www.linkedin.com/in/ayushsharma-4003813a8" target="_blank" class="contact-item">
+              <div class="c-icon"><i class="fa-brands fa-linkedin"></i></div>
+              <div>
+                <span class="c-label">LinkedIn</span>
+                <span class="c-value">ayushsharma-4003813a8</span>
+              </div>
+            </a>
+            <div class="contact-item">
+              <div class="c-icon"><i class="fa-solid fa-location-dot"></i></div>
+              <div>
+                <span class="c-label">Location</span>
+                <span class="c-value">Jind, Haryana, India</span>
+              </div>
+            </div>
+          </div>
+          <!-- Social Icons -->
+          <div class="social-links">
+            <a href="mailto:ashubrahman26@gmail.com" class="social-btn" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+            <a href="https://www.linkedin.com/in/ayushsharma-4003813a8" target="_blank" class="social-btn" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="#" class="social-btn" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+            <a href="#" class="social-btn" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+          </div>
+        </div>
+
+        <!-- Contact Form -->
+        <form class="contact-form glass fade-up delay-1" id="contactForm" onsubmit="handleSubmit(event)">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Your Name</label>
+              <input type="text" id="name" placeholder="e.g. John Doe" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Your Email</label>
+              <input type="email" id="email" placeholder="e.g. john@email.com" required />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" placeholder="e.g. Freelance Project Inquiry" required />
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" rows="5" placeholder="Tell me about your project or opportunity..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full">
+            <i class="fa-solid fa-paper-plane"></i> Send Message
+          </button>
+          <p class="form-success" id="formSuccess">
+            <i class="fa-solid fa-circle-check"></i> Message sent successfully! I'll be in touch soon.
+          </p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════ FOOTER ═══════════════ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <span class="logo-leaf">🌿</span>
+          <span class="logo-text">Ayush<span>.</span></span>
+        </div>
+        <p class="footer-copy">
+          © 2025 Ayush Sharma. Crafted with <i class="fa-solid fa-heart" style="color:#e76f51"></i> in Jind, India.
+        </p>
+        <div class="footer-social">
+          <a href="mailto:ashubrahman26@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+          <a href="https://www.linkedin.com/in/ayushsharma-4003813a8" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="#"><i class="fa-brands fa-github"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll to Top -->
+  <button class="scroll-top" id="scrollTop" aria-label="Scroll to top">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <!-- Main JS -->
+  <script src="script.js"></script>
+</body>
+</html>
